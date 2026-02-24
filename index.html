@@ -3,69 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freifunk Dillingen Donau | Freies WLAN für alle</title>
+    <title>Freifunk Dillingen an der Donau | Im Aufbau</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --ff-pink: #e30066; /* Das offizielle Freifunk-Pink */
+            --ff-pink: #e30066;
             --ff-dark: #333;
-            --ff-light: #f4f4f4;
+            --ff-light: #f9f9f9;
         }
-        body { font-family: 'Ubuntu', sans-serif; margin: 0; color: var(--ff-dark); line-height: 1.6; }
+        body { font-family: 'Ubuntu', sans-serif; margin: 0; color: var(--ff-dark); line-height: 1.6; background-color: var(--ff-light); }
         
-        header { background: white; padding: 20px; border-bottom: 3px solid var(--ff-pink); display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-weight: bold; font-size: 1.5rem; color: var(--ff-pink); text-decoration: none; }
+        header { background: white; padding: 15px 20px; border-bottom: 3px solid var(--ff-pink); display: flex; align-items: center; justify-content: center; }
+        .logo-text { font-weight: bold; font-size: 1.4rem; color: var(--ff-pink); text-decoration: none; display: flex; align-items: center; }
+        .logo-icon { height: 40px; margin-right: 12px; }
+
+        .construction-container { max-width: 800px; margin: 60px auto; padding: 40px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; }
         
-        .hero { background: var(--ff-pink); color: white; padding: 60px 20px; text-align: center; }
-        .hero h1 { margin: 0; font-size: 2.5rem; }
+        h1 { color: var(--ff-pink); font-size: 2.2rem; margin-bottom: 10px; }
+        .status-badge { display: inline-block; background: #ffe6f0; color: var(--ff-pink); padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.9rem; margin-bottom: 20px; }
         
-        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
-        
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .card { background: var(--ff-light); padding: 20px; border-radius: 8px; border-top: 5px solid var(--ff-pink); }
-        
-        .btn { display: inline-block; background: var(--ff-pink); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; font-weight: bold; }
-        .btn:hover { opacity: 0.9; }
-        
-        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: #777; }
+        p { font-size: 1.1rem; color: #555; margin-bottom: 30px; }
+
+        .action-box { background: var(--ff-light); border-left: 5px solid var(--ff-pink); padding: 20px; text-align: left; margin-bottom: 30px; }
+        .action-box h3 { margin-top: 0; color: var(--ff-pink); }
+
+        .btn { display: inline-block; background: var(--ff-pink); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
+        .btn:hover { background: #b30051; }
+
+        footer { margin-top: 50px; font-size: 0.85rem; color: #888; }
     </style>
 </head>
 <body>
 
 <header>
-    <div style="display: flex; align-items: center;">
-       <a href="#" class="logo" style="text-decoration:none;">freifunk <span style="color:var(--ff-dark)">dillingen-donau</span></a>
+    <div class="logo-text">
+        <img src="https://berlin.freifunk.net/static/img/logo.svg" alt="Freifunk Logo" class="logo-icon">
+        freifunk <span style="color:var(--ff-dark); margin-left: 5px;">dillingen-donau</span>
     </div>
-    <nav>Mitmachen | Karte | Kontakt</nav>
 </header>
 
-<section class="hero">
-    <h1>WLAN für alle. Frei und unzensiert.</h1>
-    <p>Wir bauen ein dezentrales Mitmach-Netzwerk in unserer Region.</p>
-</section>
-
-<div class="container">
-    <div class="grid">
-        <div class="card">
-            <h3>Was ist Freifunk?</h3>
-            <p>Freifunk ist eine nicht-kommerzielle Initiative für freie Funknetzwerke. Jeder kann mitmachen!</p>
-        </div>
-        <div class="card">
-            <h3>Knoten aufstellen</h3>
-            <p>Hol dir einen passenden Router, installiere unsere Firmware und werde Teil des Netzes.</p>
-            <a href="#" class="btn">Anleitung ansehen</a>
-        </div>
-        <div class="card">
-            <h3>Netzkarte</h3>
-            <p>Schau nach, wo in deiner Nähe schon Freifunk verfügbar ist.</p>
-            <a href="#" class="btn">Karte öffnen</a>
-        </div>
+<div class="construction-container">
+    <div class="status-badge">PROJEKTPHASE: INITIALISIERUNG</div>
+    <h1>Etwas Neues funkt in Dillingen!</h1>
+    <p>Wir bauen aktuell die Infrastruktur und die Community für ein freies, dezentrales WLAN-Netzwerk in Dillingen an der Donau auf.</p>
+    
+    <div class="action-box">
+        <h3>Du möchtest von Anfang an dabei sein?</h3>
+        <p>Wir suchen Mitstreiter, Standorte für Router und technikbegeisterte Menschen, die Lust auf ein offenes Netz haben.</p>
+        <a href="mailto:deine-email@beispiel.de" class="btn">Kontakt aufnehmen</a>
     </div>
-</div>
 
-<footer>
-    &copy; 2026 Freifunk Dillingen Donau - Erstellt mit Herz und Open Source.
-</footer>
+    <div style="font-size: 0.9rem; color: #666;">
+        <p><strong>Was ist Freifunk?</strong><br>
+        Freifunk ist eine nicht-kommerzielle Initiative für freie Funknetzwerke. Wir stehen für Informationsfreiheit, Netzneutralität und Privatsphäre.</p>
+    </div>
+
+    <footer>
+        &copy; 2026 Freifunk Dillingen-Donau <br>
+        <a href="#" style="color: #888;">Impressum</a> | <a href="#" style="color: #888;">Datenschutz</a>
+    </footer>
+</div>
 
 </body>
 </html>
